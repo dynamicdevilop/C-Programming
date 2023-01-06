@@ -10,11 +10,11 @@ int main()
    
    if(number <=10 && number >=1)
    {
-   for(count = 1;number >= count;count++)
-   {
-       factorial *= count;
-   }
-   printf("The Factorial of %d = %d",number,factorial);
+      for(count = 1;number >= count;count++)
+      {
+         factorial *= count;
+      }
+       printf("The Factorial of %d = %d",number,factorial);
    } else {
        printf("Invalid");
    }
