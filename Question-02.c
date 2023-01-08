@@ -10,33 +10,33 @@
 #include <stdio.h>
 #define pi 3.14
 
-int circle(int radius)
+double circle(double radius)
 {
-    int area = pi * radius * radius;
+    double area = pi * radius * radius;
     return area;
 }
 
-int cylinder(int radii,int height)
+double cylinder(double radii,double height)
 {
-    int volume = circle(radii) * height;
+    double volume = circle(radii) * height;
     return volume;
 }
 
 int main()
 {
-    int radii1,radii2,height,area,volume;
+    double radii1,radii2,height,area,volume;
     printf("Enter the radius for Circle : ");
-    scanf("%d",&radii1);
+    scanf("%lf",&radii1);
 
     printf("\nEnter the Radius of Cylinder : ");
-    scanf("%d",&radii2);
+    scanf("%lf",&radii2);
     printf("Enter the height of Cylinder : ");
-    scanf("%d",&height);
+    scanf("%lf",&height);
     
     area = circle(radii1);
     volume = cylinder(radii2,height);
-    printf("The Area of Circle = %d",area); 
-    printf("\nThe Volume of Cylinder = %d ",volume);
+    printf("The Area of Circle = %.2lf",area); 
+    printf("\nThe Volume of Cylinder = %.2lf ",volume);
 
 
 
