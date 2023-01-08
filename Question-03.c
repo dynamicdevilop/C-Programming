@@ -1,5 +1,5 @@
 /*
-    Question -03 : Write a Program to convert Celsius (Centigrade) to Farhenite.
+    Question -03 : Write a Program to convert Celsius (Centigrade) to Fahrenheit.
 */
 
 // Solution :-
@@ -8,10 +8,10 @@
 
 double temperature(double celsius)
 {
-    double farhenite;
+    double fahrenheit;
 
-    farhenite = (celsius * 9/5) + 32 ;
-    return farhenite;
+    fahrenheit = (celsius * 9/5) + 32 ;
+    return fahrenheit;
 }
 
 int main()
@@ -21,6 +21,6 @@ int main()
     printf("Enter temperature in celsius : ");
     scanf("%lf",&c);
     f = temperature(c);
-    printf("%.2lf celsius = %.2lf farhenite",c,f);
+    printf("%.2lf celsius = %.2lf fahrenheit",c,f);
     return 0;
 }
