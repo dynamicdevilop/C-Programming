@@ -7,7 +7,7 @@ int main() {
     printf("Enter a Number : ");
     scanf("%d",&number);
     
-    if(number % 2 == 0)
+    if(number % 2 == 0) // edited by ashish
     {
         printf("Number = %d , is Even.");
     } else
