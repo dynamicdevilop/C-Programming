@@ -4,7 +4,7 @@
 
 struct student {
   char name[100];
-  int age;
+  int rollNumber;
   float marks;
   float fees;
   float scholarship;
@@ -18,8 +18,8 @@ int main() {
   while (continue_flag == 'y') {
     printf("Enter name of student %d: ", i + 1);
     scanf("%s", s[i].name);
-    printf("Enter age of student %d: ", i + 1);
-    scanf("%d", &s[i].age);
+    printf("Enter Roll Number of student %d: ", i + 1);
+    scanf("%d", &s[i].rollNumber);
     printf("Enter marks of student %d: ", i + 1);
     scanf("%f", &s[i].marks);
 
@@ -64,9 +64,10 @@ int main() {
     }
   }
 
-  printf("\nMerit list:\n");
+  printf("\nMerit list: \n");
   for (int j = 0; j < n; j++) {
-    printf("%d. %s (%.2f) Fees: %.2f Scholarship: %.2f\n", j + 1, s[j].name, s[j].marks, s[j].fees, s[j].scholarship);
+    printf("%d. %s (%.2f) \n\t", j + 1, s[j].name, s[j].marks);
+    printf("(Fees: %.2f)...(Scholarship: %.2f)...(Revised Fees : %.2f)", s[j].fees, s[j].scholarship,s[j].fees-s[j].scholarship);
   }
 	getch();
 

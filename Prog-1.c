@@ -4,7 +4,7 @@
 
 struct student {
   char name[100];
-  int age;
+  int rollNumber;
   float marks;
 };
 
@@ -16,8 +16,8 @@ int main() {
   while (continue_flag == 'y') {
     printf("Enter name of student %d: ", i + 1);
     scanf("%s", s[i].name);
-    printf("Enter age of student %d: ", i + 1);
-    scanf("%d", &s[i].age);
+    printf("Enter Roll Number of student %d: ", i + 1);
+    scanf("%d", &s[i].rollNumber);
     printf("Enter marks of student %d: ", i + 1);
     scanf("%f", &s[i].marks);
 
@@ -29,7 +29,7 @@ int main() {
   printf("\nDetails of students:\n");
   for (int j = 0; j < i; j++) {
     printf("Name: %s\n", s[j].name);
-    printf("Age: %d\n", s[j].age);
+    printf("Age: %d\n", s[j].rollNumber);
     printf("Marks: %.2f\n", s[j].marks);
     printf("\n");
   }
